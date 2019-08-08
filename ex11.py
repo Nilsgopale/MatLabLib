@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+plt.plot([1, 2, 3, 4], [10, 20, 25, 30], color='lightblue', linewidth=3)
+plt.scatter([0.3, 3.8, 1.2, 2.5], [11, 25, 9, 26], color='darkgreen', marker='^')
+plt.xlim(0.5, 4.5)
+plt.show()
+fig = plt.figure()
+ax = fig.add_subplot(111)
+ax.scatter(np.linspace(0, 1, 5), np.linspace(0, 5, 5))
+plt.show()
+fig = plt.figure(figsize=(20,10))
+ax1 = fig.add_subplot(121)
+ax2 = fig.add_subplot(122)
+ax1.bar([1,2,3],[3,4,5])
+ax2.barh([0.5,1,2.5],[0,1,2])
+plt.show()
